@@ -1,0 +1,24 @@
+{
+  "name": "sass-flex",
+  "homepage": "https://github.com/AlexanderKozhevin/sass-flex",
+  "authors": [
+    "alexanderkozhevin <turboasm21@gmail.com>"
+  ],
+  "description": "simple flexbox markup",
+  "main": "_sass_flexbox.scss",
+  "keywords": [
+    "scss",
+    "flexbox"
+  ],
+  "license": "MIT",
+  "_release": "6516b35f60",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6516b35f60bcea577fdda2ee0608f5f29fbff665"
+  },
+  "_source": "https://github.com/AlexanderKozhevin/sass-flex.git",
+  "_target": "*",
+  "_originalSource": "sass-flexbox",
+  "_direct": true
+}

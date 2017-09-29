@@ -1,0 +1,149 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	.main-nav-trigger
+		display: block
+
+	.nav 
+		position: relative
+		.gorizontal_menu
+			position: absolute
+			display: none
+			top: 100%
+			left: 0
+			width: 100%
+			background-color: #353537
+			z-index: 1
+			li
+				display: block
+				width: 100%
+				padding: 10px 0
+				text-align: center
+				a
+
+	.logo
+		padding-top: 5px
+	.intro
+		top: 200px
+		h3
+			font-size: 30px
+		h1
+			font-size: 50px
+
+	.about-title
+		float: right
+		width: 50%
+		h4
+			font-size: 16px
+			line-height: 18px
+		p
+			text-align: jusitfy
+			font-size: 14px
+			line-height: 18px
+	.about-img
+		width: 50%
+		float: left
+		img
+			width: 140px
+			height: 140px
+	.about-last
+		width: 50%
+		float: left
+		.about-link
+			width: 140px
+			height: 140px
+			padding: 25px 10px
+			font-size: 16px
+			line-height: 22px
+	.cms 
+		img
+			margin-right: 0
+			margin-bottom: 20px
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.about-title
+		float: right
+		width: 50%
+		h4
+			margin-top: 10px
+			font-size: 16px
+			line-height: 18px
+		p
+			font-size: 14px
+			line-height: 16px
+	.about-img
+		width: 50%
+		float: left
+		img
+			width: 140px
+			height: 140px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

@@ -1,0 +1,108 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.services
+		[class^="col-"]
+			margin-bottom: 50px
+	
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.intro_header
+		top: 80px
+		font-size: 2rem
+	.btn
+		margin-bottom: 30px
+	.nav
+		position: relative
+		.gorizontal_menu
+			position: absolute
+			display: none
+			top: 100%
+			left: 0
+			width: 100%
+			background-color: $overlay
+			z-index: 2
+			li
+				display: block
+				margin-left: 0
+				width: 100%
+				text-align: center
+				border-bottom: 1px solid lighten($overlay, 5%)
+				a
+					display: inline-block
+					padding: 20px 30px
+					&.active
+						border-color: transparent
+	.tab-wrapper
+		position: relative
+		.black_font_menu
+			top: 100%
+			left: 0
+			width: 100%
+			li
+				display: block
+				margin: 0
+				text-align: center
+				a
+					padding: 20px 30px
+					border: transparent
+				
+
+	.main-nav-trigger
+		display: block
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.intro_header
+		top: 20px
+		font-size: 30px
+	.form-text-col
+		margin-top: 0
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.intro_header
+		font-size: 2rem
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+	
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

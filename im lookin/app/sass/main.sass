@@ -1,0 +1,271 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "mixins"
+@import "icon"
+@import "interfaces"
+@import "normalize"
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+body
+	font-family: "SegoeUI", Arial, sans-serif
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.clearfix:after
+	content: ""
+	display: table
+	clear: both
+
+/*HEADER=========================*/
+.header
+	@include bgimg ("../img/bg.jpg")
+	height: 100vh
+
+/*NAV gorizontal_menu=========================*/
+.nav
+	padding: 60px 0
+	background-color: $overlay
+	background-color: rgba($overlay,0.85)
+	img
+		margin-top: (38px - 23px)/2
+.gorizontal_menu
+	float: right
+
+.intro_header
+	position: relative
+	top: 250px
+	width: 100%
+	text-align: center
+	text-transform: uppercase
+	font-weight: 300
+	color: #fff
+	line-height: 75px
+	@include font-size(42px)
+	span
+		background-color: rgba($overlay, 0.7)
+		padding: 0 20px
+
+/*Section styles=========================*/
+.stn
+	padding-top: 80px
+	padding-bottom: 75px
+	color: #fff
+.services
+	background-color: $accent
+.stn_heading
+	margin-bottom: 50px
+	text-transform: uppercase
+	color: #fff
+	font-weight: 300
+	line-height: 1
+	@include font-size (30px)
+	&:after
+		content: ""
+		position: relative
+		top: 10px
+		display: block
+		height: 2px	
+		width: 45px
+		background-color: #fff
+
+/*STN  SEVICES SPRITES=========================*/
+.stn_sprite_heading
+	margin-top: 20px
+	margin-bottom: 15px
+	text-transform: uppercase
+	font-weight: 500
+	@include font-size(24px)
+.stn_sprite_descr
+	font-weight: 500
+	line-height: 18px
+
+/*STN PORTFOLIO=========================*/
+.portfolio
+	background-color: #FFF
+.black_heading
+	color: $font
+	margin-bottom: 80px
+	&:after
+		background-color: $font
+
+/*thumbs_row=========================*/
+.thumbs-row
+	min-height: 270px + 270px +30px
+	[class^="col-"]
+		margin-bottom: 30px
+	a
+		position: relative
+		display: block
+		height: 270px
+		text-align: center
+		font-size: 72px
+		font-weight: 300
+		color: #fff
+		background: #979797
+		opacity: .8
+		&:after
+			content: "+"
+			position: absolute
+			left: 0
+			top: 0
+			line-height: 1px
+			width: 100%
+			height: 100%
+			background-color: #444d54
+			background-color: rgba(#444d54, 0.9)
+			opacity: 0
+			transition: all 0.3s ease-in-out
+		&:hover:after
+			opacity: 1
+			line-height: 270px
+	.thumb-1
+		@include bgimg ("../img/portfolio_1.jpg")
+	.thumb-2
+		@include bgimg ("../img/portfolio_2.jpg")
+	.thumb-3
+		@include bgimg ("../img/portfolio_3.jpg")
+	.thumb-4
+		@include bgimg ("../img/portfolio_4.jpg")
+	.thumb-5
+		@include bgimg ("../img/portfolio_5.jpg")
+	.thumb-6
+		@include bgimg ("../img/portfolio_6.jpg")
+	.thumb-7
+		@include bgimg ("../img/portfolio_7.jpg")
+	.thumb-8
+		@include bgimg ("../img/portfolio_8.jpg")
+
+
+/*STN VIDEO=========================*/
+.video
+	background-color: #515f67
+
+.stn_heading_descr
+	padding-left: 0
+	p
+		line-height: 24px
+		margin-bottom: 10px
+		font-weight: 300
+.btn
+	@include btn
+
+/*TWITTER========================*/
+.twit
+	background-color: $accent
+	[class^="col-md-11"]
+		padding-left: 0
+	p
+		font-weight: 300
+		@include font-size(28px)
+		strong
+			font-weight: 500
+.icon-twit
+	@include font-size(24px)
+	float: right
+	color: #fff
+
+/*PHOTO========================*/
+.about
+	color: #fff
+	@include bgimg ("../img/bg_social.jpg")
+.social-links
+	margin-top: 30px
+	li
+		display: inline-block
+		margin-right: 20px
+		&:last-child
+			margin-right: 0
+		a
+			display: table
+			height: 65px
+			width: 65px
+			text-align: center
+			font-size: 30px
+			color: #fff
+			border: 2px solid #fff
+			@include transition(all 0.3s ease-in-out)
+			&:hover
+				border-color: $accent
+				color: $accent
+			i
+				display: table-cell
+				vertical-align: middle
+
+/*SECTIONS TESTIMONIALS========================*/
+.testimonials
+	color: #000
+.tst-quote
+	@include font-size(28px)
+	font-weight: 300
+	line-height: 50px
+	cite
+		@include font-size(14px)
+		display: block
+		margin-top: 30px
+		font-weight: 600
+		color: $accent
+.icon-qoute
+	float: right
+	@include font-size(30px)
+	color: #515f67
+
+/*SECTIONS CONTACT========================*/
+.contact
+	@include bgimg ("../img/bg_footer.jpg")
+	color: #fff
+	p
+		line-height: 22px
+		margin-bottom: 40px
+
+.form-text-col
+	margin-top: 21px
+	
+/*FOOTER========================*/
+.site-footer 
+	@include font-size(12px)
+	padding-top: 80px
+	padding-bottom: 75px
+	font-weight: 500
+	background-color: #353f47
+	color: #515f67
+	p
+		float: right
+
+.footer-nav
+	float: left
+	li
+		float: left
+		&:before
+			content: "|"
+		&:first-child
+			&:before
+				content: ""
+			a
+				padding-left: 0
+		a
+			padding: 0 10px
+			text-transform: uppercase
+			color: #515f67
+		&:hover
+			text-decoration: underline
+
+
+@import "media"

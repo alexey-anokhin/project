@@ -1,0 +1,300 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "mixins"
+@import "icons"
+@import "normalize"
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+.clearfix:before,
+.clearfix:after 
+	content: " "
+	display: table
+	clear:both
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.right
+	float: right
+.left
+	float: left
+
+/*HEADER and MENU ==============*/
+.header
+	height: 700px
+	background-color: #000
+	background-image: url("../img/header_bg!.jpg")
+	background-repeat: no-repeat
+	background-position: center bottom
+	background-size: cover
+.menu
+	position: relative
+	top: 40px
+.logo
+	float: left
+.nav
+	position: relative
+	top: 40px
+.gorizontal_menu
+	float: right
+	margin: 0
+	padding: 7px 0
+	list-style-type: none
+
+	li
+		display: inline-block
+		margin-right: 40px
+	a
+		display: block
+		text-transform: uppercase
+		color: #fff
+		@include transition(all 0.3s ease-in-out)
+		&:hover
+			color: $main-color
+	.active
+		color: $main-color
+.main-nav-trigger
+	float: right
+	display: none
+	color: #fff
+	font-size: 32px
+	cursor: pointer
+
+
+/*HEADER-INTRO==============*/
+.intro
+	position: absolute
+	width: 100%
+	top: 275px
+	left: 0
+	text-align: center
+	color: #fff
+	h3
+		font-size: 40px
+		font-weight: 300
+		margin-bottom: 50px
+	h1
+		margin-bottom: 50px
+		font-size: 75px
+		text-transform: uppercase
+		font-weight: 300
+.btn
+	padding: 20px 30px
+	text-align: center
+	font-size: 24px
+	font-weight: bold
+	text-transform: uppercase
+	color: #fff
+	background-color: #fed136
+	border-color: #fed136
+	border-radius: 5px
+
+
+/*SECTIONS==============*/
+.stn
+	padding: 120px 0 110px 0
+	h2
+		margin-bottom: 10px
+		font-size: 40px
+		font-weight: 600
+		color: #222
+		text-transform: uppercase
+		text-align: center
+	p
+		margin-bottom: 75px
+		text-align: center
+		font-size: 16px
+		font-family: "Times New Roman", sans-serif
+		color: #777
+	h3
+		font-size: 18px
+		font-weight: 600
+		color: #222
+		margin: 20px 0 10px 0
+	p
+		font-size: 18px
+		font-family: "Times New Roman", sans-serif
+		color: #777
+		line-height: 24px
+
+/*SERVICES==============*/
+.services
+	text-align: center
+	background-color: #FFF
+
+.commerce
+	background: url("../img/commerce.png")
+	background-repeat: no-repeat
+	background-position: center top
+
+/*PORTFOLIO==============*/
+.portfolio
+	text-align: center
+	background-color: #f7f7f7
+.portfolio-item
+	margin: 0 auto
+	width: 290px
+.port-item-footer
+	padding: 28px 0
+	margin-bottom: 50px
+	background-color: #FFF
+.port-last-footer
+	margin-bottom: 0
+
+/*ABOUT==============*/
+.about
+	background-color: #FFF
+	text-align: center
+.about-title
+	width: 35%
+	h4
+		margin-bottom: 10px
+		font-size: 18px
+		line-height: 24px
+		font-weight: 600
+		color: #222
+		span
+			text-transform: uppercase
+	p
+		font-size: 16px
+		margin-bottom: 0
+.about-img
+	width: 30%
+	img
+		text-align: center
+		height: 169px
+		width: 169px
+		border: 7px solid #f1f1f1
+		border-radius: 50%
+	&:after
+		content: ""
+		margin: 0 auto
+		display: block
+		height: 90px
+		width: 3px
+		background: #f1f1f1
+.about-last
+	text-align: center
+	.about-link
+		display: inline-block
+		padding-top: 25px
+		font-size: 18px
+		font-weight: bold
+		line-height: 30px
+		color: #fff
+		text-transform: uppercase
+		font-family: Arial, sans-serif
+		background-color: #fed136
+		height: 169px
+		width: 169px
+		border: 7px solid #f1f1f1
+		border-radius: 50%
+
+/*TEAM==============*/
+.team
+	text-align: center
+	background-color: #f9f9f9
+	.stn-team-descr
+		margin: 0
+		font-size: 16px
+.team-item
+	margin-bottom: 50px
+	img
+		border: 7px solid #f1f1f1
+		border-radius: 50%
+		margin-bottom: 15px
+	h4
+		margin-bottom: 5px
+		font-size: 16px
+		font-weight: bold
+		color: #000
+	p
+		font-size: 14px
+		margin-bottom: 0
+.social-icon
+	.-icon-wp:hover
+		background-position: -5px -138px 
+	.-icon-fb:hover
+		background-position: -5px -0px
+	.-icon-print:hover
+		background-position: -5px -92px 
+	.-icon-gl:hover
+		background-position: -5px -46px
+
+
+			
+/*CMS==============*/
+.cms
+	text-align: center
+	padding: 60px 0
+	background-color: #FFF
+	img
+		margin-right: 50px
+
+/*CONTACT==============*/
+.contact
+	text-align: center
+	background-color: #222
+	background-image: url("../img/map-bg.png")
+	background-repeat: no-repeat
+	background-position: right bottom
+
+.contact > h2
+	color: #fff
+.form-control
+	width: 100%
+	padding: 20px
+	border-radius: 5px
+	border: 1px solid #ccc
+	font-family: Arila, sans-serif
+	font-weight: bold
+	&::placeholder
+		color: #bbb
+		text-transform: uppercase
+		font-size: 14px
+input
+	height: 50px
+	margin-bottom: 30px
+textarea
+	height: 210px
+	resize: none
+	margin-bottom: 25px
+
+/*FOOTER=================*/
+.footer
+	padding: 30px 0
+	background-color: #f9f9f9
+	.container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+	span
+		color: #555
+	.social-icon-footer
+		text-align: center
+		
+
+
+
+@import "media"

@@ -1,0 +1,33 @@
+
+/*IMAGE*/
+@mixin bgimg($imgpath, $position:center center, $background-attachment:"scroll")
+	background-image: url($imgpath)
+	background-position: $position
+	background-repeat: no-repeat
+	background-attachment: $background-attachment
+	background-size: cover
+
+
+/*PX to REM*/
+@function calculateRem($size) 
+	$remSize: $size / 14px
+	@return $remSize * 1rem
+
+
+@mixin font-size($size) 
+	font-size: $size
+	font-size: calculateRem($size)
+
+//button
+@mixin btn($c:#353f46, $c-hover:#fff)
+	display: inline-block
+	padding: 15px 35px
+	border: 2px solid $c
+	color: $c
+	text-transform: uppercase
+	font-weight: 600
+	//margin-bottom: 15px
+	transition: all .3s ease-in-out
+	&:hover
+		color: $c-hover
+		border-color: $c-hover
